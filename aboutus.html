@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color:#23354d;
+  overflow-x:hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+} 
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium vitae maxime veritatis deleniti natus provident cupiditate ducimus, inventore odit ullam esse, modi voluptatum consequatur voluptates optio illum error quis!</p>
+      </div>
+      
+        <div class="column"style="position:relative;left:200px;">
+          <div class="card">
+            <img src="https://www.entrepreneurs.ng/wp-content/uploads/2019/06/Mark-Zuckerberg.jpg" alt="Mark" style="width:100%">
+            <div class="container">
+              <h2>Mark Zuckerberg</h2>
+              <p class="title"style="color:white">CEO & Founder</p>
+              <p>Mark Elliot Zuckerberg is an American media magnate,internet enterpreneur, and philanthropist. He is known for co-founding the social media website Facebook and its parent company Meta Platforms, of which he is the chairman,chief executive officer and controlling shareholder. Zuckerberg began using computers and writing software in middle school.</p>
+              <p>mark@facebook.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column"style="position:relative;left:240px;">
+          <div class="card">
+            <img src="https://th.bing.com/th/id/R.c6327369bf80a137b6a3c329107b8119?rik=As3vyEcB2Be6uw&riu=http%3a%2f%2fnewzofday.com%2fwp-content%2fuploads%2f2019%2f09%2fBillGatesHeadshot.jpg&ehk=i8tqeNbmLoYcyC%2fyiBUDhnWmyqCv%2fiyEQp8qULWCgeA%3d&risl=&pid=ImgRaw&r=0" alt="Bill" style="width:100%">
+            <div class="container">
+              <h2>Bill Gates</h2>
+              <p class="title"style="color:white">Designer</p>
+              <p>William Henry Gates is an American Business magnate, software developer, investor, author, and philanthropist. He is a co-founder of Microsoft, along with his late childhood friend Paul Allen. In 1992, President Bush recognized the importance of the work of Bill Gates by awarding him the National Medal of Technology.</p>
+              <p>bill@microsoft.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>        
+</body>
+</html>

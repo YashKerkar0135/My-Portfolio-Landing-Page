@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  right:4px; 
+}
+
+body {
+  background-color:#23354d;
+}
+.container {
+  width: 1000px;
+  position:relative;
+  left:180px;
+}
+
+.apply_box {
+  max-width: 730px;
+  padding: 20px;
+  background-color:skyblue;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 4px 3px 5px rgba(3, 0, 0, 0.1); 
+  border-radius: 10px; 
+}
+
+.title_small {
+  font-size: 20px;
+}
+
+ .form_container {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px; 
+} 
+.form_control {
+  display: flex;
+  flex-direction: column;
+}  
+
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.phone{
+    position:relative;
+    bottom:50px;
+    left:290px;
+}
+#firstn{
+  position:relative;
+  left:80px;
+}
+#lastn{
+  position:relative;
+  left:20px;
+}
+#emaillab{
+  position:relative;
+  left:42px;
+}
+#email{
+  position:relative;
+  left:38px;
+}
+#job{
+  position:relative;
+  left:22px;
+}
+#addresslab{
+  position:relative;
+  left:46px;
+}
+#address{
+  position:relative;
+  left:40px;
+}
+#citylab{
+  position:relative;
+  left:44px;
+}
+#city{
+  position:relative;
+  left:40px;
+}
+#pincodelab{
+  position: relative;
+  left:22px;
+}
+#pincode{
+  position:relative;
+  left:22px;
+}
+#datelab{
+  position: relative;
+  left:85px;
+}
+#date{
+  position: relative;
+  left:85px;
+}
+#phonelab{
+  position:relative;
+  left:20px;
+}
+#phone{
+  position:relative;
+  left:412px;
+  bottom:52px;
+
+}
+#apply{
+  position:relative;
+  left:82px;
+  bottom:20px;
+}
+#upload{
+  position:relative;
+  right:318px;
+}
+#file{
+  position:relative;
+  left:395px; 
+  bottom:20px;
+}
+#apply{
+  position: relative;
+}
+  button {
+  background-color:blueviolet;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 8px;
+} 
+button:hover {
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  color: black;
+  cursor: pointer;
+}
+  .textarea_control {
+  grid-column: 1 / span 2;
+} 
+.textarea_control textarea {
+  width:79%;
+}
+
+@media (max-width: 460px) {
+  .textarea_control {
+    grid-column: 1 / span 1;
+  }
+} 
+img{
+  position:relative;
+  bottom:470px;
+  left:775px;
+}
+h1{
+  position:relative;
+  left:70px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <h1> Join Us</h1>
+        <form action="">
+          <div class="form_container">
+              <!-- <div class="form_control">  -->
+              <span id="firstn">
+              <label for="first_name"> First Name </label><br>
+              <input
+                id="first_name"
+                name="first_name"/>
+                </span>
+              <!-- <div class="form_control">  -->
+              <span id="lastn">
+              <label for="last_name"> Last Name </label><br>
+              <input id="last_name" name="last_name" />
+              </span>
+            <!-- <div class="form_control"> -->
+              <span id="email">
+              <span id="emaillab">
+              <label for="email"> Email </label><br>
+              </span>
+              <input type="email" id="email"name="email"/>
+              </span>
+            <div class="form_control">
+              <span id="job">
+              <label for="job_role"> Job Role </label><br>
+              <select id="job_role" name="job_role">
+               <option value="">Select</option>
+                <option value="datascience">Data Scientist</option>
+                <option value="research">Research Scientist</option>
+                <option value="MachineLearning">Machine Learning Engineer</option>
+                <option value="BigData">Big Data Engineer</option>
+                <option value="Robotics">Robotics Scientist</option>
+                <option value="DataAnalyst">AI Data Analyst</option>
+              </select> 
+              </div>
+            </span>
+            <div class="textarea_control"> 
+              <span id="address">
+              <span id="addresslab">
+              <label for="address"> Address </label><br>
+              </span>
+              <textarea id="address"name="address"></textarea>
+              </span>
+            </div>
+            <div class="form_control">
+              <span id="city">
+              <span id="citylab">
+              <label for="city"> City </label><br>
+              </span>
+              <input id="city" name="city"/>
+              </span>
+            </div>
+            <div class="form_control">
+              <span id="pincodelab">
+              <label for="pincode"> Pincode </label><br>
+            </span>
+            <span id="pincode">
+              <input type="number"name="pincode"/>
+              </span>
+            </div>
+            <div class="form_control">
+              <span id="datelab">
+              <label for="date"> Date of Birth </label><br>
+              </span>
+              <span id="date">
+              <input type="date" name="date" />
+              </span>
+            </div>
+            <span id="phonelab">
+            <label for="phone">Phone no.</label><br>
+            </span>
+            <span id="phone">
+            <input type="phone"name="phone"/>
+            </span>
+          <span id="upload">
+            <label for="upload"> Upload Your CV </label><br>
+            </span>
+            <span id="file">
+            <input style="background-color:white;"type="file" id="upload" name="upload" />
+            </span>
+          <div class="button_container"> 
+            <span id="apply">
+            <button onclick="alert('You have successfully applied for the job.')" type="submit">Apply Now</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  <img src="https://purepng.com/public/uploads/medium/purepng.com-robotrobotprogrammableautomatonelectronics-1701528369215gsgfw.png"alt="Robo"height="400px;"width="300px;">
+  </body>
+</html>
